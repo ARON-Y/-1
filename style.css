@@ -14,6 +14,117 @@ a {
 
 /* popup 부분 */
 .popup {
+  display: none;
+  /* 일단 block을 설정 한 후 css완료 되면 안보이게 할 예정 */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  min-height: 200px;
+  background-color: whitesmoke;
+  border: 2px solid #000;
+  border-radius: 5px;
+  /* box-shadow는 용량 보고 재량껏 넣어도 된다. 디자인영역*/
+  padding: 20px;
+  z-index: 10;
+}
+
+.popup h1 {
+  font: bold 30px/1 "aral";
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup p {
+  font: normal 18px/1.5 "arial";
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.popup #close {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  padding: 5px 10px;
+  color: #eee;
+}
+
+/* header 부분 */
+
+header {
+  width: 100%;
+}
+header .inner {
+  width: 1200px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: whitesmoke;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+
+header .inner .wrap #gnb {
+  position: absolute;
+  top: 50%;
+  right: 50px;
+  transform: translateY(-50%);
+}
+
+/* header .inner .wrap #gnb::after {
+  content: "";
   display: block;
-  /* 나중에 안보이게 할 예정 */
+  clear: both;
+} */
+
+header .inner .wrap #gnb > li {
+  float: left;
+  position: relative;
+}
+
+header .inner .wrap #gnb > li > a {
+  display: block;
+  width: 150px;
+  height: 60px;
+  font: bold 16px/60px "arial";
+  color: #555;
+  text-align: center;
+}
+
+header .inner .wrap #gnb > li > a:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+header .inner .wrap #gnb > li > .sub {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  display: block;
+  /* 코딩 완료 후 display none 줄것. */
+}
+
+header .inner .wrap #gnb > li > .sub > li > a {
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-color: #555;
+  font: 13px/50px "arial";
+  color: #888;
+  text-align: center;
+}
+
+header .inner .wrap #gnb > li > .sub > li > a:hover {
+  color: lightcyan;
+  background-color: #333;
 }
