@@ -1,0 +1,19 @@
+@charset 'utf-8';
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* popup 부분 */
+.popup {
+  display: block;
+  /* 나중에 안보이게 할 예정 */
+}
